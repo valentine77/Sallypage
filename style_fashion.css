@@ -1,0 +1,16 @@
+.top-header{
+	font-size: 30px;
+}
+
+.sub-header{
+	font-size:15px;
+}
+
+article,aside,canvas,details,figcaption,figure,
+header,footer,main,menu,nav,section,summary {
+  display: block;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}

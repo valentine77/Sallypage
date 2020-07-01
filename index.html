@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+
+<head>
+<meta charset = "UTF-8">
+<script type="text/javascript" src="http://code.jquery.com/jquery-3.1.0.min.js"></script>
+<html lang = "ja">
+<meta name = "viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+<meta name="apple-mobile-web-app-capable" content="no">
+<meta name="format-detection" content="telephone=no">
+<link rel = "stylesheet" type="text/css" media="(min-width: 640px)" href="style.css">
+<link rel="stylesheet" media="(max-width: 640px)" href="style_mobile.css">
+<link rel = "apple-touch-icon" href ="apple-touch-icon.png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<link rel="stylesheet" href="//ajax.googleapis.com/ajax/libs/jquerymobile/3.1.1/jquery.mobile.min.css" />
+<script src="//ajax.googleapis.com/ajax/libs/jquerymobile/3.1.1/jquery.mobile.min.js"></script>
+<script src="bxslider-4-4.2.12/src/js/jquery.bxslider.js"></script>
+<script src="bxslider-4-4.2.12/dist/jquery.bxslider.min.js"></script>
+<link href="bxslider-4-4.2.12/src/css/jquery.bxslider.css" rel="stylesheet" />
+
+
+<!--[if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+<title>celeb dog life</title>
+
+<style>
+#slider div
+{
+width:100%;
+max-width: 100%;
+height: auto;
+}
+</style>
+
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.bxslider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+
+
+</script>
+
+<script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 500000; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+        $(‘#slider’).bxSlider({
+           auto: true,
+           pause: 4000,
+           speed: 1000,
+           pager: false,
+           controls: false,
+           captions: false,
+           randomStart: true,
+           infiniteLoop: true,
+           mode: ‘fade’,
+           responsive: true
+        });
+      });
+ </script>
+
+</head>
+
+<body>
+
+<div class = "title-header">
+ <h1 class = "top-name">東京Dog</h1>
+
+ <h2 class = "sub-name">犬との生活を楽しく、おしゃれにするための情報発信サイト</h2> 
+
+ <h2 class = "third-name">supported by DOG BLOGGER</h2>
+
+</div>
+
+
+<div class="header"　onclick=””>
+  <div class="header-logo">Index</div>
+  <div class="header-list">
+   <ul>
+   <li class="about">
+   <a href="#link">About</a>
+   <span class="balloon">当サイトの概要</span>
+   </li>
+   <li class="spots">
+   <a href="spots.html">Spots</a>
+   <span class="balloon1">おすすめの場所</span>
+   </li>
+   <li class="fashion">
+   <a href="fashion.html">Fashion</a>
+   <span class="balloon2">お洋服</span>
+   </li>
+   <li class="medical">
+   <a href="medical.html">Medical</a>
+   <span class="balloon3">健康に関する情報</span>
+   </li>
+   </ul>
+  </div>
+</div>
+
+  
+   <div class="bxslider">
+    <div class="Hitsujimon"><img title="light" alt="" src="bxslider-4-4.2.12/src/images/hitsujimon.jpg" offcet: "0px 500px;"></div>
+    <div class="granma1"><img title="グランマ" alt="" src = "bxslider-4-4.2.12/src/images/granma1.jpg" offcet: "0px 500px;"></div>
+    <div class="Icebar"><img title="Ice" alt="" src= "bxslider-4-4.2.12/src/images/Icebar.jpg" offcet: "0px 500px;"></div>
+    <div class="rose"><img title="rose" alt="" src="bxslider-4-4.2.12/src/images/rose.jpg" offcet: "0px 500px;"></div>
+    <div class="sallypancake2"><img title="sallypancake2" alt="" src="bxslider-4-4.2.12/src/images/sallypancake2.jpg" offcet: "0px 500px;"></div>
+  </div>
+  
+
+<div class="main"　onclick=””>
+<a name = "link"><h1 class = "About">ABOUT</h1></a>
+<h3 class = "sentence">おしゃれな犬の生活を支援するブログです！飼っているワンちゃんをもっとキレイに、おしゃれにしたい。。そう思っている方々にお届けしたいブログサイトです。</h3>
+
+
+<div class="gallary">
+  <div class="gallary-items">
+
+  <div class="Sora1">
+  <img title="Sora1"　 src="images/Sora1.jpg">
+  </div>
+
+  <div class="Sally1">
+  <img title="Sally1" src="images/Sally1.jpg">
+  </div>
+  
+  <div class="Sally2">
+  <img title="Sally2" src="images/Sally2.jpg">
+  </div>
+
+ </div>
+</div>
+
+<div class="contact-form">
+        <h3 class="section-title">Contact me</h3>
+        
+        <p>名前 (必須) </p>
+
+        <input>
+
+        <p>メールアドレス（必須）</p>
+        <!-- <input>要素を追加してください -->
+        <input>
+        
+        <div class = "input-title">
+        <p>件名（必須）</p>
+        <!-- <textarea>要素を追加してください -->
+        <input>
+        </div>
+        
+        <div class = "input-message">
+        <p>メッセージ (必須) </p>
+
+        <textarea></textarea>
+        
+        <p>※必須項目は必ずご入力ください</p>
+        <!-- <input>要素を追加してください -->
+        </div>
+        
+        <input class="contact-submit" type=submit value="送信">
+        
+        
+      </div>
+</div>
+    
+    <div class="footer"　onclick=””>
+      <div class="footer-logo">DOG BLOGGER</div>
+      <div class="footer-list">
+        <ul>
+          
+          
+          
+        </ul>
+        <p class="caution">当サイトの内容、テキスト、画像等の無断転載・無断使用を固く禁じます。
+また、NAVERまとめ等のまとめサイトへの引用を厳禁いたします。</p>
+        <p class="caution2">Unauthorized copying and replication of the contents of this site, text and images are strictly prohibited.</p>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+<footer>
+</footer>
+</html>

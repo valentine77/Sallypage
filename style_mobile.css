@@ -1,0 +1,497 @@
+//* スマートフォン用CSS */
+html {　/* 小画面用 */
+  font-size: 62.5%;
+}
+body {
+  font-size: 14px;
+  font-size: 1.4rem;  /* 14px は 1.4rem */
+  /* body 要素のフォントサイズを指定（10px にならないように） */
+}
+
+
+@media screen and (max-width: 640px) {
+
+img{
+max-width: 100%;
+height: auto;
+width /***/:auto;
+}
+
+
+
+/* ここから通常のCSS */
+
+
+
+.title-header {
+ height: 70px;
+ color: #000000;
+ background-color: #FFFFFF;
+ width: 100%;
+ margin-bottom: 0.05em;
+ 
+}
+
+.top-name{
+ font-family: cursive;
+ color: #000000;
+ padding-top: 0px;
+ padding-left: 20px;
+ padding-right: 0px;
+ padding-bottom: 0px;
+ margin-bottom: 0px;
+ border-bottom: 0px;
+ font-size: 32px;
+
+}
+
+
+
+.sub-name{
+float: left;
+font-family: impact;
+color: #000000;
+border-top: 0px;
+margin-top: 0px;
+padding-top: 0px;
+padding-left: 20px;
+padding-right: 0px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+border-bottom: 0px;
+font-size: 18px;
+
+}
+
+.third-name{
+	float: left;
+	font-family: Gulim;
+	font-size: 16px;
+	color: #000000;
+	margin-top: 0px;
+	border-top: 0px;
+	padding-top: 0px;
+	padding-left: 20px;
+	padding-right: 0px;
+  padding-bottom: 0px;
+  border-bottom: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  vertical-align: top;
+}
+
+
+.header {
+	background-color: #000000;
+	color: #FFFFFF;
+	height: 80px;
+	margin-top: 15px;
+	clear: both;
+
+}
+
+
+
+.header-logo {
+	float: left;
+	font-size: 0px;
+	margin-bottom: 0px;
+	padding: 15px 20px;
+	padding-bottom: 30px;
+	color: #fff;
+	
+
+
+}
+.header-list {
+	float: left;
+	margin-top: -15px;
+	margin-left: -35px;
+
+
+	
+
+}
+
+.header-list li { 
+	font-size: 14px;
+	list-style: none;
+	float: left;
+	padding: 1px 12px;
+
+	
+}
+
+.header-list a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+
+/*-------------------------------------------------*/
+
+.about {
+      
+      position: relative;
+      color: #fff;
+      
+    }
+
+/*.about:hover .balloon {
+  display: inline;             /* インライン要素として表示 
+}*/
+
+
+
+.balloon {
+  position   : absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: rgba(102, 102, 255, 0.50);       /* 背景色（透明度） */
+  width:60px;                          /* 吹き出し全体の幅 */
+  left : 30%;                           /* 表示位置 */
+  bottom : 100%;                        /* 表示位置 */
+  margin-bottom : 0.05px;                 /* 表示位置 */
+  font-size: 80%;                       /* 文字サイズ */
+}
+.balloon:after{
+  border-top: 12px solid rgba(102, 102, 255, 0.50);    /* 吹き出し口の高さ・色 */
+  border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+  border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+  bottom: -12px;                          /* 吹き出し口の位置調整 */
+  left : 5%;                              /* 吹き出し口の横位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+
+.spots {
+
+  position: relative;
+
+}
+
+/*.spots:hover .balloon1 {
+  display: inline;                /* インライン要素として表示 
+}*/
+
+
+.balloon1 {
+  position   : absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: rgba(102, 102, 255, 0.50);       /* 背景色（透明度） */
+  width:180px;                          /* 吹き出し全体の幅 */
+  left : 30%;                           /* 表示位置 */
+  bottom : 90%;                        /* 表示位置 */
+  margin-bottom : 0.05px;                 /* 表示位置 */
+  font-size: 80%;                       /* 文字サイズ */
+}
+.balloon1:after{
+  border-top: 12px solid rgba(102, 102, 255, 0.50);    /* 吹き出し口の高さ・色 */
+  border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+  border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+  bottom: -12px;                          /* 吹き出し口の位置調整 */
+  left : 5%;                              /* 吹き出し口の横位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+
+.fashion {
+  position: relative;
+}
+
+/*.fashion:hover .balloon2 {
+  display: inline;                /* インライン要素として表示 
+}*/
+
+.balloon2 {
+  position   : absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: rgba(102, 102, 255, 0.50);       /* 背景色（透明度） */
+  width:180px;                          /* 吹き出し全体の幅 */
+  left : 30%;                           /* 表示位置 */
+  bottom : 90%;                        /* 表示位置 */
+  margin-bottom : 0.05px;                 /* 表示位置 */
+  font-size: 80%;                       /* 文字サイズ */
+}
+.balloon2:after{
+  border-top: 12px solid rgba(102, 102, 255, 0.50);    /* 吹き出し口の高さ・色 */
+  border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+  border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+  bottom: -12px;                          /* 吹き出し口の位置調整 */
+  left : 5%;                              /* 吹き出し口の横位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+
+
+.medical {
+
+  position: relative;
+}
+
+/*.medical:hover .balloon3 {
+  display: inline;                /* インライン要素として表示 
+}*/
+
+.balloon3 {
+  position   : absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: rgba(102, 102, 255, 0.50);       /* 背景色（透明度） */
+  width:180px;                          /* 吹き出し全体の幅 */
+  left : 30%;                           /* 表示位置 */
+  bottom : 90%;                        /* 表示位置 */
+  margin-bottom : 0.05px;                 /* 表示位置 */
+  font-size: 80%;                       /* 文字サイズ */
+}
+.balloon3:after{
+  border-top: 12px solid rgba(102, 102, 255, 0.50);    /* 吹き出し口の高さ・色 */
+  border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+  border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+  bottom: -12px;                          /* 吹き出し口の位置調整 */
+  left : 5%;                              /* 吹き出し口の横位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+
+
+
+/*-------------------------------------------------*/
+
+.main {
+	padding: 33px 30px;
+	clear: both;
+
+}
+
+.Hitsujimon{
+  width: 70%; 
+  height: 350px;
+}
+
+.granma1{
+  width: 70%; 
+  height: 350px;
+
+}
+
+.Icebar{
+  width: 70%; 
+  height: 350px;
+}
+
+.rose{
+width: 70%; 
+height: 350px;
+}
+
+
+.sallypancake2{
+width: 70%; 
+height: 350px;
+}
+
+
+
+.gallary {
+    
+    padding: 30px 18px;
+    /*margin:0;*/
+    
+
+    height: 300px;
+    width: 300px;
+    margin-top: 50px;
+    vertical-align: center;
+    margin-left: -15px;
+	
+}
+
+
+
+.gallary-items {
+float: left;
+	
+
+
+}
+
+.Sora1{
+width: 67px; 
+height: 120px;
+padding: 4px 4px;
+float: left;
+
+}
+
+.Sally1{
+width: 90px;
+height: 120px;
+padding: 4px 4px;
+float: left;
+
+}
+
+.Sally2{
+width: 90px;
+height: 120px;
+padding: 4px 4px;
+float: left;
+
+}
+
+
+
+
+
+
+.About {
+	font-family: impact;
+	color: #000000;
+	border: 10px 10px;
+	text-align: center;
+	font-size: 40px;
+	clear: both;
+}
+.sentence {
+	float: left;
+	color: #000000;
+	text-align: center;
+	border-bottom: 10px;
+	margin-bottom: 10px;
+	padding-top: 10px;
+	padding-left: 8px;
+	padding-right: 8px;
+	padding-bottom: 0px;
+	
+	font-size: 24px;
+	
+}
+
+
+
+.
+article,aside,canvas,details,figcaption,figure,
+header,footer,main,menu,nav,section,summary {
+  display: block;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+.main_img{
+	width: 100%;
+	height: 480px;
+	background: url('images/main_image.png');
+	background-size: cover;
+	background-position: 20% 10%;
+}
+
+.bxslider img {
+    margin:0 auto;
+    display:block;
+    }
+
+
+.section-title {
+  border-bottom: 2px solid #dee7ec;
+  font-size: 28px;
+  padding-bottom: 15px;
+  margin-bottom: 50px;
+
+}
+
+.contact-form {
+  padding-top: 70px;
+
+
+
+
+
+}
+
+/* inputとtextareaのCSSを指定してください */
+input{
+  width: 280px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  padding:20px;
+  font-size: 14px;
+  
+  
+  border: 1px solid #dee7ec;
+
+
+}
+
+textarea{
+  width: 280px;
+  margin-top: 10px;
+  margin-bottom: 30px;
+  margin-right: 50px;
+  padding:20px;
+  font-size: 18px;
+ 
+  
+  border: 1px solid #dee7ec;
+ 
+}
+
+
+/* contact-submitのCSSを指定してください */
+.contact-submit{
+  background-color: #dee7ec;
+  color: #889eab;
+  width: 200px;
+  margin-left: 50px;
+
+}
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  height: 230px;
+  padding: 40px;
+}
+
+.footer-logo {
+  float: left;
+  font-size: 20px;
+  margin-top: -10px;
+
+}
+
+/*今はここから下は使わない*/
+
+.footer-list {
+  clear: both;
+
+
+}
+
+.footer-list li {
+  padding-bottom: 20px;
+  font-size: 14px;
+
+
+}
+
+/*今はここから上は使わない*/
+
+.footer > .footer-list >.caution{
+  font-size: 14px;
+  padding-bottom: 1px;
+}
+
+.footer >.footer-list > .caution2{
+  font-size: 14px;
+  padding-bottom: 50px;
+}
+
+
+
+}/* ←CSSの一番最後に記述 */

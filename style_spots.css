@@ -1,0 +1,383 @@
+/* PC用CSS */
+@media print, screen and (min-width: 640px) {
+
+/* ここから通常のCSS */
+
+
+
+.title-header {
+ height: 70px;
+ color: #000000;
+ background-color: #FFFFFF;
+
+ 
+}
+
+.top-name{
+ font-family: cursive;
+ color: #000000;
+ padding-top: 0px;
+ padding-left: 170px;
+ padding-right: 20px;
+ padding-bottom: 0px;
+ margin-bottom: 0px;
+ border-bottom: 0px;
+ font-size: 33px;
+
+}
+
+
+
+.sub-name{
+float: left;
+font-family: impact;
+color: #000000;
+border-top: 0px;
+margin-top: 0px;
+padding-top: 0px;
+padding-left: 170px;
+padding-right: 20px;
+padding-bottom: 0px;
+margin-bottom: 0px;
+border-bottom: 0px;
+font-size: 15px;
+
+}
+
+.third-name{
+	float: left;
+	font-family: Gulim;
+	font-size: 20px;
+	color: #000000;
+	margin-top: 0px;
+	border-top: 0px;
+	padding-top: 0px;
+	padding-left: 500px;
+	padding-right: 10px;
+    padding-bottom: 0px;
+    border-bottom: 0px;
+    margin-bottom: 0px;	
+    vertical-align: top;
+}
+
+
+.header {
+	background-color: #000000;
+	color: #FFFFFF;
+	height: 90px;
+	clear: both;
+}
+
+
+
+.header-logo {
+	float: left;
+	font-size: 20px;
+	padding: 33px 170px;
+}
+.header-list {
+	float: left;
+}
+
+.header-list li { 
+	font-size: 19px;
+	list-style: none;
+	float: left;
+	padding: 18px 50px;
+}
+
+.header-list a {
+	color: #FFFFFF;
+	text-decoration: none;
+}
+
+/*-------------------------------------------------*/
+
+/*ここまでコピーした*/
+.top-header {color: #000000;
+font-size: 28px;
+	
+}
+
+.sub-header {
+	color: #000000;
+	font-size: 22px;
+}
+
+.explain p {
+	font-size: 20px;
+}
+
+
+/*-------------------------------------------------*/
+
+.about {
+      
+  position: relative;
+      
+}
+
+.about:hover .balloon {
+  display: inline;                /* インライン要素として表示 */
+}
+.balloon {
+  position   : absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: rgba(102, 102, 255, 0.50);       /* 背景色（透明度） */
+  width:180px;                          /* 吹き出し全体の幅 */
+  left : 30%;                           /* 表示位置 */
+  bottom : 90%;                        /* 表示位置 */
+  margin-bottom : 0.05px;                 /* 表示位置 */
+  font-size: 80%;                        /* 文字サイズ */
+  color: #fff;   
+  font-style: bold;                   
+}
+.balloon:after{
+  border-top: 12px solid rgba(102, 102, 255, 0.50);    /* 吹き出し口の高さ・色 */
+  border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+  border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+  bottom: -12px;                          /* 吹き出し口の位置調整 */
+  left : 5%;                              /* 吹き出し口の横位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+
+.spots {
+
+  position: relative;
+
+}
+
+.spots:hover .balloon1 {
+  display: inline;                /* インライン要素として表示 */
+}
+
+.balloon1 {
+  position   : absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: rgba(102, 102, 255, 0.50);       /* 背景色（透明度） */
+  width:180px;                          /* 吹き出し全体の幅 */
+  left : 30%;                           /* 表示位置 */
+  bottom : 90%;                        /* 表示位置 */
+  margin-bottom : 0.05px;                 /* 表示位置 */
+  font-size: 80%;                       /* 文字サイズ */
+  color: #fff;   
+  font-style: bold;    
+}
+.balloon1:after{
+  border-top: 12px solid rgba(102, 102, 255, 0.50);    /* 吹き出し口の高さ・色 */
+  border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+  border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+  bottom: -12px;                          /* 吹き出し口の位置調整 */
+  left : 5%;                              /* 吹き出し口の横位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+
+.fashion {
+  position: relative;
+}
+
+.fashion:hover .balloon2 {
+  display: inline;                /* インライン要素として表示 */
+}
+.balloon2 {
+  position   : absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: rgba(102, 102, 255, 0.50);       /* 背景色（透明度） */
+  width:180px;                          /* 吹き出し全体の幅 */
+  left : 30%;                           /* 表示位置 */
+  bottom : 90%;                        /* 表示位置 */
+  margin-bottom : 0.05px;                 /* 表示位置 */
+  font-size: 80%;                       /* 文字サイズ */
+  color: #fff;   
+  font-style: bold;    
+}
+.balloon2:after{
+  border-top: 12px solid rgba(102, 102, 255, 0.50);    /* 吹き出し口の高さ・色 */
+  border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+  border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+  bottom: -12px;                          /* 吹き出し口の位置調整 */
+  left : 5%;                              /* 吹き出し口の横位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+
+
+.medical {
+
+  position: relative;
+}
+
+.medical:hover .balloon3 {
+  display: inline;                /* インライン要素として表示 */
+}
+
+.balloon3 {
+  position   : absolute;                /* 親要素を基準 */
+  display: none;                        /* 要素を非表示 */
+  padding: 2px;                         /* テキストの前後の余白 */
+  background-color: rgba(102, 102, 255, 0.50);       /* 背景色（透明度） */
+  width:180px;                          /* 吹き出し全体の幅 */
+  left : 30%;                           /* 表示位置 */
+  bottom : 90%;                        /* 表示位置 */
+  margin-bottom : 0.05px;                 /* 表示位置 */
+  font-size: 80%;                       /* 文字サイズ */
+  color: #fff;   
+  font-style: bold;    
+}
+.balloon3:after{
+  border-top: 12px solid rgba(102, 102, 255, 0.50);    /* 吹き出し口の高さ・色 */
+  border-left: 10px solid transparent;    /* 吹き出し口の幅１／２ */
+  border-right: 10px solid transparent;   /* 吹き出し口の幅１／２ */
+  bottom: -12px;                          /* 吹き出し口の位置調整 */
+  left : 5%;                              /* 吹き出し口の横位置 */
+  content: "";                       /* コンテンツの挿入 */
+  position: absolute;                /* 親要素を基準 */
+}
+
+
+/*-------------------------------------------------*/
+
+
+.main{
+    padding: 100px 80px;
+	height:500px;
+}
+
+
+.slider img {
+    margin:0 auto;
+    display:block;
+}
+
+
+.sallypancake {
+
+	width: 100%; 
+	height: 700px;
+}
+
+.spoon {
+
+	width: 100%; 
+	height: 700px;
+}
+
+.cake {
+
+	width: 100%; 
+	height: 700px;
+}
+
+.komeda {
+    
+    width: 100%; 
+	height: 700px;
+
+}
+
+.usagi  {
+
+	width: 100%; 
+	height: 700px;
+}
+
+
+
+li{
+	color: #000000;
+	font-size: 20px;
+	padding-bottom:50px;
+	float left;
+	list-style: none;
+
+
+}
+
+.third-header {color: #000000;
+font-size: 20px;
+text-align: center;
+padding-top: 10px; 
+border-bottom: 10px;
+margin-bottom: 10px;
+padding-bottom: 0px;
+	
+}
+
+.fourth-header {color: #000000;
+font-size: 20px;
+text-align: center;
+border-bottom: 10px;
+margin-bottom: 10px;
+padding-bottom: 0px;
+}
+
+
+/*article,aside,canvas,details,figcaption,figure,
+header,footer,main,menu,nav,section,summary {
+  display: block;
+}*/
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
+
+/*#holder {
+	height:1000px;
+	overflow: hidden;
+	width:100px;
+}*/
+
+
+
+
+
+
+/*以下をコピーした（style.cssから）*/
+
+/*-------------------------------------------------*/
+
+
+
+.footer {
+  background-color: #000000;
+  color: #fff;
+  height: 180px;
+  padding: 40px;
+}
+
+.footer-logo {
+ 
+  font-size: 32px;
+}
+
+.footer-list {
+   float: left;
+}
+
+.footer-list li {
+  padding-bottom: 0px;
+  /*float: left;*/
+
+}
+
+
+
+.footer >　.caution{
+  font-size: 20px;
+  padding-bottom: 1px;
+}
+
+.footer > .caution2{
+  font-size: 20px;
+  padding-bottom: 50px;
+}
+
+
+
+}/* ←CSSの一番最後に記述 */
+	

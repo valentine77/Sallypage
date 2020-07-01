@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+
+<head>
+ <meta charset = "UTF-8">
+ <html lang = "ja">
+ <link rel = "stylesheet" type = "text/css" href="style_spots.css">
+ <link rel = "stylesheet" type="text/css" media="(min-width: 640px)" href="style_spots.css">
+ <link rel="stylesheet" media="(max-width: 640px)" href="style_spots_mobile.css">
+ <link rel = "apple-touch-icon" href ="apple-touch-icon.png">
+ <meta name = "viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=10.0, user-scalable=yes">
+ <meta name="apple-mobile-web-app-capable" content="no">
+ <meta name="format-detection" content="telephone=no">
+ <title>spots</title>
+ 
+<script src="bxslider-4-4.2.12/docs_src/assets/vendors/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+
+
+
+
+<!--<div class="curtains">
+    <span class="top"></span>
+    <span class="right"></span>
+    <span class="bottom"></span>
+    <span class="left"></span>
+ <![if lt IE 9]>
+<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<script src="//css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]
+</div>-->
+
+<style>
+#slider div
+{
+width:100%;
+max-width: 100%;
+height: auto;
+}
+</style>
+
+<script type="text/javascript">
+        $(document).ready(function(){
+            $('.slider').bxSlider({
+                auto: true,
+                pause: 5000,
+            });
+        });
+</script>
+
+<script>
+      $(function(){
+        // #で始まるリンクをクリックしたら実行されます
+        $('a[href^="#"]').click(function() {
+          // スクロールの速度
+          var speed = 500000; // ミリ秒で記述
+          var href= $(this).attr("href");
+          var target = $(href == "#" || href == "" ? 'html' : href);
+          var position = target.offset().top;
+          $('body,html').animate({scrollTop:position}, speed, 'swing');
+          return false;
+        });
+        $(‘#slider’).bxSlider({
+           auto: true,
+           pause: 4000,
+           speed: 1000,
+           pager: false,
+           controls: false,
+           captions: false,
+           randomStart: true,
+           infiniteLoop: true,
+           mode: ‘fade’,
+           responsive: true
+        });
+      });
+ </script>
+
+
+</head>
+<body>
+
+<div class = "title-header">
+ <h1 class = "top-name">東京Dog</h1>
+
+ <h2 class = "sub-name">犬との生活を楽しく、おしゃれにするための情報発信サイト</h2> 
+
+ <h2 class = "third-name">supported by DOG BLOGGER</h2>
+
+</div>
+
+<div class="header">
+  <div class="header-logo">Index</div>
+  <div class="header-list">
+  <ul>
+   <li class="about">
+   <a href="index.html">Top</a>
+    <span class="balloon">トップページ</span>
+  </li>
+   <li class="spots">
+   <a href="spots.html">Spots</a>
+   <span class="balloon1">おすすめの場所</span>
+   </li>
+   <li class="fashion">
+   <a href="fashion.html">Fashion</a>
+   <span class="balloon2">お洋服</span>
+   </li>
+   <li class="medical">
+   <a href="medical.html">Medical</a>
+   <span class="balloon3">健康に関する情報</span>
+   </li>
+  </ul>
+  </div>
+</div>
+
+  <h1 class = "top-header">ワンちゃんと行けるオススメの場所</h1>
+  <h2 class = "sub-header">Where you can take your dogs</h2>
+  <div class="explain">
+    <p>東京周辺でワンちゃんと一緒に行けるオススメスポットをご紹介します！</p>
+    <p>今現在は渋谷・表参道の場所を中心にアップしていきます。</p>
+    <p>これを見て、ワンちゃんと一緒に楽しくおしゃれな場所にどんどんお出かけしましょう。</p>
+  </div>
+
+    <div class="slider">
+    <div class="sallypancake"><img src="bxslider-4-4.2.12/src/images/sallypancake.jpg" alt="" offcet: "0px 500px;">
+    </div>
+    <div class="spoon"><img src="bxslider-4-4.2.12/src/images/sally_spoon.jpg" alt="">
+    </div>
+    <div class="cake"><img src="bxslider-4-4.2.12/src/images/cake.jpg" alt="">
+    </div>
+    <div class="komeda"><img src="bxslider-4-4.2.12/src/images/komeda.jpg" alt="">
+    </div>
+    <div class="usagi"><img src="bxslider-4-4.2.12/src/images/usagi.jpg" alt="">
+    </div>
+    </div>
+
+   
+     
+     <h3 class = "third-header">おすすめの場所</h3>
+     <h4 class = "fourth-header">you will love it!</h4>
+
+     <div class="main">
+     <ul>
+        <li>
+        <a href = "spots/Shibuya_html_css/spot_shibuya.html">渋谷/Shibuya</a>
+        <li>
+        <a href = "spots/Omotesando_html_css/spot_omotesando.html">表参道/Omotesando</a>
+        </li>
+        <li>
+        <a href = "spots/spot_ebisu.html">恵比寿/Ebisu</a>
+        </li>
+     </ul>
+     </div>
+
+     <div class="footer">
+      <div class="footer-logo">DOG BLOGGER</div>
+      <div class="footer-list">
+        <ul>
+          <li class="gaiyou">会社概要</li>
+          <li><a href = "index.html">戻る/back</a></li>
+        </ul>
+        <p class="caution">当サイトの内容、テキスト、画像等の無断転載・無断使用を固く禁じます。
+また、NAVERまとめ等のまとめサイトへの引用を厳禁いたします。</p>
+        <p class="caution2">Unauthorized copying and replication of the contents of this site, text and images are strictly prohibited.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+<footer>
+</footer>
+</html>

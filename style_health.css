@@ -1,0 +1,23 @@
+.top-header{color:#000000;
+ font-size:20px;
+}
+
+.sub-header{color:#000000;
+font-size:15px;
+}
+
+li{
+	color: #000000;
+	font-size: 15px;
+	list-style: none;
+	float left;
+}
+
+article,aside,canvas,details,figcaption,figure,
+header,footer,main,menu,nav,section,summary {
+  display: block;
+}
+
+body {
+  -webkit-text-size-adjust: 100%;
+}
