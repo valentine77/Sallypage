@@ -84,11 +84,12 @@ font-size: 18px;
 .header {
 	background-color: #000000;
 	color: #FFFFFF;
-	height: 80px;
+	height: 50px;
 	margin-top: 15px;
 	clear: both;
+  position: relative;
 
-}
+}/*メニュー全体*/
 
 
 
@@ -99,34 +100,135 @@ font-size: 18px;
 	padding: 15px 20px;
 	padding-bottom: 30px;
 	color: #fff;
-	
+}/*メニューの各項目*/
 
 
-}
-.header-list {
+/*.header-list {
 	float: left;
 	margin-top: -15px;
 	margin-left: -35px;
+}/*メニューの各項目*/
 
-
-	
-
-}
-
-.header-list li { 
+/*.header-list li { 
 	font-size: 14px;
 	list-style: none;
 	float: left;
 	padding: 1px 12px;
+}/*about,spot等*/
 
-	
-}
-
-.header-list a {
+/*.header-list a {
 	color: #FFFFFF;
 	text-decoration: none;
+}/*各メニューのリンク*/
+
+/****メニュー全体****/
+#menu{
+  /*配置*/
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 100;
 }
 
+/****メニュー開閉ボタン****/
+#menu div{
+  /*デザイン*/
+  width: 30px;
+  height: 30px;
+  /*background: rgba(200,200,200,1);*/
+  /*配置*/
+  /*overflow: hidden;*/
+  background-color: #444;
+  position: absolute;
+  border-radius: 2px;
+  display: inline-block;
+  box-sizing: border-box;
+
+}
+
+#menu div:nth-of-type(1) {
+  top: 0;
+  color: #fff;
+}
+#menu div:nth-of-type(2) {
+  top: 10px;
+  color: #fff;
+}
+#menu div:nth-of-type(3) {
+  bottom: 0;
+  color: #fff;
+}
+
+#menu .menuopen{
+  /*デザイン*/
+  color: rgba(255,255,255,1);
+  font-size: 20px;
+  /*配置*/
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+}
+
+#menu .menuclose{
+  /*デザイン*/
+  color: rgba(255,255,255,1);
+  font-size: 20px;
+  /*配置*/
+  display: none;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: auto;
+}
+
+/****メニュー一覧****/
+#menu ul{
+  /*デザイン*/
+  background: rgba(200,200,200,1);
+  width: 80%;
+  /*配置*/
+  position: absolute;
+  top: 30px;/*#menu divの高さ*/
+  left: 0;
+  display: none;
+}
+
+#menu li{
+  /*デザイン*/
+  padding: 10px;
+  color: rgba(0,0,0,1);
+  border-bottom: 1px rgba(255,255,255,1) solid;
+  /*配置*/
+  pointer-events: auto;
+}
+
+
+/****メニューオープン時****/
+#menu:target .menuopen{
+  /*配置*/
+  display: none;
+}
+
+#menu:target .menuclose{
+  /*配置*/
+  display: block;
+}
+
+#menu:target ul{
+  /*配置*/
+  display: block;
+}
+
+/*** メインエフェクト ***/
 
 /*-------------------------------------------------*/
 
