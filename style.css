@@ -66,7 +66,7 @@ font-size: 15px;
 	color: #fff;
 	height: 90px;
 	clear: both;
-}
+}/*メニュー全体*/
 
 
 
@@ -74,22 +74,31 @@ font-size: 15px;
 	float: left;
 	font-size: 20px;
 	padding: 33px 170px;
-}
+}/*index*/
+
 .header-list {
 	float: left;
-}
+}/*メニューの各項目*/
 
 .header-list li { 
 	font-size: 19px;
 	list-style: none;
 	float: left;
 	padding: 18px 50px;
-}
+}/*about,spot等*/
 
 .header-list a {
 	color: #fff;
 	text-decoration: none;
 
+}/*各メニューのリンク*/
+
+#menu {
+  color: #000;
+}
+
+#close {
+  color: #000;
 }
 
 /*-------------------------------------------------*/
