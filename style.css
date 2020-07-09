@@ -93,12 +93,13 @@ font-size: 15px;
 
 }/*各メニューのリンク*/
 
-#menu {
-  color: #000;
+#nav-drawer {
+  display:none;
 }
 
-#close {
-  color: #000;
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
 }
 
 /*-------------------------------------------------*/
