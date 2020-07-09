@@ -122,9 +122,9 @@ font-size: 18px;
 }/*各メニューのリンク*/
 
 /****メニュー全体****/
-#menu{
+/*#menu{
   /*配置*/
-  position: absolute;
+  /*position: absolute;
   top: 10px;
   left: 0;
   width: 100%;
@@ -134,14 +134,13 @@ font-size: 18px;
 }
 
 /****メニュー開閉ボタン****/
-#menu div{
-  /*デザイン*/
-  width: 30px;
+/*  /*デザイン*/
+  /*width: 30px;
   height: 30px;
   /*background: rgba(200,200,200,1);*/
   /*配置*/
   /*overflow: hidden;*/
-  background-color: #444;
+  /*background-color: #444;
   position: absolute;
   border-radius: 2px;
   display: inline-block;
@@ -149,25 +148,16 @@ font-size: 18px;
 
 }
 
-#menu div:nth-of-type(1) {
-  top: 0;
-  color: #fff;
-}
-#menu div:nth-of-type(2) {
-  top: 10px;
-  color: #fff;
-}
-#menu div:nth-of-type(3) {
-  bottom: 0;
-  color: #fff;
-}
+
+
+
 
 #menu .menuopen{
   /*デザイン*/
-  color: rgba(255,255,255,1);
-  font-size: 20px;
+  /*color: rgba(255,255,255,1);*/
+  /*font-size: 20px;
   /*配置*/
-  display: block;
+  /*display: block;
   width: 100%;
   height: 100%;
   position: absolute;
@@ -178,20 +168,97 @@ font-size: 18px;
 
 #menu .menuclose{
   /*デザイン*/
-  color: rgba(255,255,255,1);
-  font-size: 20px;
+  /*color: rgba(255,255,255,1);*/
+  /*font-size: 20px;
   /*配置*/
-  display: none;
+  /*display: none;
   width: 100%;
   height: 100%;
   position: absolute;
   top: 0;
   left: 0;
   pointer-events: auto;
+}*/
+
+#nav-drawer {
+  position: relative;
+}
+
+/*チェックボックス等は非表示に*/
+.nav-unshown {
+  display:none;
+}
+
+/*アイコンのスペース*/
+#nav-open {
+  display: inline-block;
+  width: 30px;
+  height: 22px;
+  vertical-align: middle;
+}
+
+/*ハンバーガーアイコンをCSSだけで表現*/
+#nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 3px;/*線の太さ*/
+  width: 25px;/*長さ*/
+  border-radius: 3px;
+  background: #555;
+  display: block;
+  content: '';
+  cursor: pointer;
+}
+#nav-open span:before {
+  bottom: -8px;
+}
+#nav-open span:after {
+  bottom: -16px;
+}
+
+/*閉じる用の薄黒カバー*/
+#nav-close {
+  display: none;/*はじめは隠しておく*/
+  position: fixed;
+  z-index: 0;
+  top: 0;/*全体に広がるように*/
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0;
+  transition: .3s ease-in-out;
+}
+
+/*中身*/
+#nav-content {
+  overflow: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;/*最背面に*/
+  width: 90%;/*右側に隙間を作る（閉じるカバーを表示）*/
+  max-width: 330px;/*最大幅（調整してください）*/
+  height: 100%;
+  background: #fff;/*背景色*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
+}
+
+/*チェックが入ったらもろもろ表示*/
+#nav-input:checked ~ #nav-close {
+  display: block;/*カバーを表示*/
+  opacity: .5;
+}
+
+#nav-input:checked ~ #nav-content {
+  -webkit-transform: translateX(0%);
+  transform: translateX(0%);/*中身を表示（右へスライド）*/
+  box-shadow: 6px 0 25px rgba(0,0,0,.15);
 }
 
 /****メニュー一覧****/
-#menu ul{
+/#nav-content ul{
   /*デザイン*/
   background: rgba(200,200,200,1);
   width: 80%;
@@ -200,32 +267,37 @@ font-size: 18px;
   top: 30px;/*#menu divの高さ*/
   left: 0;
   display: none;
+  z-index: 2;/*最前面に*/
+  transition: .3s ease-in-out;/*滑らかに表示*/
+  -webkit-transform: translateX(-105%);
+  transform: translateX(-105%);/*左に隠しておく*/
 }
 
-#menu li{
+#nav-content li{
   /*デザイン*/
   padding: 10px;
   color: rgba(0,0,0,1);
   border-bottom: 1px rgba(255,255,255,1) solid;
   /*配置*/
   pointer-events: auto;
+   z-index: 3;/*最前面に*/
 }
 
 
 /****メニューオープン時****/
-#menu:target .menuopen{
+/*#menu:target .menuopen{
   /*配置*/
-  display: none;
+ /* display: none;
 }
 
 #menu:target .menuclose{
   /*配置*/
-  display: block;
+ /*display: block;
 }
 
 #menu:target ul{
   /*配置*/
-  display: block;
+  /*display: block;
 }
 
 /*** メインエフェクト ***/
