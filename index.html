@@ -90,10 +90,11 @@ height: auto;
   <div class="header-logo">Index</div>
   <div class="header-list">
   <div id="menu">
-    <div><a href="#menu" class="menuopen"></a><a href="#close" class="menuclose"></div>
-  <div></div>
-  <div></div>
-  <div></div>
+    <!--<div><a href="#menu" class="menuopen"></a><a href="#close" class="menuclose"></div>!-->
+   <input id="nav-input" type="checkbox" class="nav-unshown">
+      <label id="nav-open" for="nav-input"><span></span></label>
+      <label class="nav-unshown" id="nav-close" for="nav-input"></label>
+      <div id="nav-content">
    <ul>
    <li class="about">
    <a href="#link">About</a>
@@ -112,11 +113,12 @@ height: auto;
    <span class="balloon3">健康に関する情報</span>
    </li>
    </ul>
+     </div><!--id "nav-content"の終わり!-->
   </div><!--id "menu"の終わり!-->
   </div><!--header-listの終わり!-->
 </div>
 
-<div id="main"><!---id "main"の始まり!-->
+<!---<div id="main">id "main"の始まり!-->
 
    <div class="bxslider">
     <div class="Hitsujimon"><img title="light" alt="" src="bxslider-4-4.2.12/src/images/hitsujimon.jpg" offcet: "0px 500px;"></div>
@@ -197,7 +199,7 @@ height: auto;
     </div>
   </div>
 
-</div><!---id "main"の終わり!-->
+<!---</div>id "main"の終わり!-->
 
 </body>
 <footer>
